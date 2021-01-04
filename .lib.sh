@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #
 # Helper functions for displaying output in a common way
 #
@@ -7,6 +9,6 @@ start () {
 }
 
 end() {
-  echo -e "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m`which $1`"
-  echo -e "\e[34m»»» 💡 \e[32mVersion details: \n\e[39m`$1 $2`"
+  echo -e "\n\e[34m»»» 💾 \e[32mInstalled to: \e[33m$(which $1)"
+  echo -e "\e[34m»»» 💡 \e[32mVersion details: \n\e[39m$($1 $2)"
 }
