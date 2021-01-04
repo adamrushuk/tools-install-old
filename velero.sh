@@ -17,4 +17,4 @@ sudo mv velero-${ver}-linux-amd64/velero $HOME/.local/bin
 rm -rf velero-${ver}-linux-amd64
 rm velero.tar.gz
 
-end 'velero' '--version'
+end 'velero' 'version'

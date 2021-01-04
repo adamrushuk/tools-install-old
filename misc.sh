@@ -2,7 +2,6 @@
 set -e
 
 # Misc system utilities
-
 sudo apt update -y
 sudo apt install jq
 sudo apt install pv
