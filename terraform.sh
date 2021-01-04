@@ -1,9 +1,9 @@
-#!/bin/bash 
+#!/bin/bash
 set -e
 DIR=$(cd `dirname $0` && pwd)
 source $DIR/.lib.sh
 
-ver="0.13.4"
+ver="0.12.29"
 start "Terraform $ver"
 
 cd /tmp
