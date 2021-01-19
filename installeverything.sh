@@ -1,13 +1,12 @@
-#!/bin/bash 
+#!/bin/bash
 
-sudo apt update -y 
+sudo apt update -y
 sudo apt upgrade -y
 
-sh ./azcopy.sh 
-sh ./dotnet.sh 
-sh ./mongodb.sh 
-sh ./toilet.sh 
-sh ./ohmyzsh.sh 
+sh ./azcopy.sh
+sh ./dotnet.sh
+sh ./mongodb.sh
+sh ./ohmyzsh.sh
 sh ./azure-cli.sh
 sh ./docker-client.sh
 sh ./terraform.sh

@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-DIR=$(cd $(dirname $0) && pwd)
-source $DIR/.lib.sh
+DIR=$(cd "$(dirname "$0")" && pwd)
+source "$DIR/.lib.sh"
 
 start "kubens & kubectx"
 
-mkdir -p $HOME/.local/bin
+mkdir -p "$HOME/.local/bin"
 
 # install krew
 (

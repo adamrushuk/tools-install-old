@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
-DIR=$(cd `dirname $0` && pwd)
-source $DIR/.lib.sh
+DIR=$(cd "$(dirname "$0")" && pwd)
+source "$DIR/.lib.sh"
 
 start "kubectl"
 
@@ -10,7 +10,7 @@ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt
 sudo apt-get update
 sudo apt-get install -y kubectl
 
-echo -e "\nInstalled to: `which kubectl`"
-echo -e "\nVersion details: \n`kubectl version`"
+echo -e "\nInstalled to: $(which kubectl)"
+echo -e "\nVersion details: \n$(kubectl version)"
 
 end 'kubectl' 'version'

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd $HOME/tools
+cd "$HOME/tools"
 
 git add .
-git commit -m "`date`"
+git commit -m "$(date)"
 git push
