@@ -3,7 +3,8 @@ set -e
 DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
-ver="3.5.0"
+# https://github.com/helm/helm/releases
+ver="3.5.3"
 
 start "Helm v$ver"
 
