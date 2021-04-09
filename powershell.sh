@@ -31,4 +31,10 @@ sudo apt-get install -y powershell
 # Cleanup
 rm packages-microsoft-prod.deb
 
+# Install modules
+pwsh --command "Install-Module -Name posh-git -Scope CurrentUser -AllowPrerelease -Force -Verbose"
+pwsh --command "Install-Module -Name oh-my-posh -Scope CurrentUser -Verbose"
+pwsh --command "Install-Module -Name PSReadLine -Scope CurrentUser -AllowPrerelease -Force -SkipPublisherCheck -Verbose"
+pwsh --command "Get-Module"
+
 end 'pwsh' '--version'
