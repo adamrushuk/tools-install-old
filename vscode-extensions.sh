@@ -19,6 +19,7 @@ extensions=(
     'foxundermoon.shell-format'
     # 'GitLab.gitlab-workflow'
     'hashicorp.terraform'
+    'humao.rest-client'
     # 'ivory-lab.jenkinsfile-support'
     # 'johnpapa.vscode-peacock'
     # 'marcostazi.VS-code-vagrantfile'
