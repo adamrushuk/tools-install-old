@@ -3,12 +3,17 @@ set -e
 DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
-start "kubectl"
+# show available versions:
+# apt-cache policy kubectl
+VERSION="1.19.11-00"
+
+start "kubectl $VERSION"
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
-sudo apt-get install -y kubectl
+sudo apt-get install -y kubectl=$VERSION
+# sudo apt-get remove -y kubectl
 
 echo -e "\nInstalled to: $(which kubectl)"
 echo -e "\nVersion details: \n$(kubectl version)"
