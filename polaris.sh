@@ -1,11 +1,11 @@
 #!/bin/bash
-# https://github.com/fairwindsops/polaris/releases
 
 set -e
 DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
-ver="3.1.2"
+# https://github.com/fairwindsops/polaris/releases
+ver="4.0.7"
 start "Polaris $ver"
 
 curl -L "https://github.com/FairwindsOps/polaris/releases/download/${ver}/polaris_${ver}_linux_amd64.tar.gz" -o /tmp/polaris.tar.gz

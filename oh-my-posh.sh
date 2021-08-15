@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # oh-my-posh3 is a prompt theme engine for any shell
-# https://github.com/JanDeDobbeleer/oh-my-posh3/releases
 
 set -e
 DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
+# https://github.com/JanDeDobbeleer/oh-my-posh3/releases
 ver="v3.85.0"
 start "oh-my-posh $ver"
 

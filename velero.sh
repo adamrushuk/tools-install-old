@@ -4,7 +4,8 @@ DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
 # https://github.com/vmware-tanzu/velero/releases
-ver="v1.6.0"
+ver="v1.4.3"
+# ver="v1.6.3"
 start "Velero $ver"
 
 curl -L "https://github.com/vmware-tanzu/velero/releases/download/${ver}/velero-${ver}-linux-amd64.tar.gz" -o /tmp/velero.tar.gz
