@@ -4,7 +4,7 @@ DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
 # https://github.com/helm/helm/releases
-ver="3.6.3"
+ver="3.7.0"
 
 start "Helm v$ver"
 
