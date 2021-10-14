@@ -4,8 +4,8 @@ DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
 # show available versions:
-# apt-cache policy kubectl
-VERSION="1.19.11-00"
+# apt-cache madison kubectl | head -n 40
+VERSION="1.20.9-00"
 
 start "kubectl $VERSION"
 
