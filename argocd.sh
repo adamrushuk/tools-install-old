@@ -4,7 +4,7 @@ DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
 # https://github.com/argoproj/argo-cd/releases
-version="2.1.2"
+version="2.1.7"
 start "Argo CD $version"
 
 mkdir -p  "$HOME/.local/bin"

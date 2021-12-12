@@ -5,10 +5,10 @@ DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
 # https://github.com/fairwindsops/polaris/releases
-ver="4.0.7"
+ver="4.2.0"
 start "Polaris $ver"
 
-curl -L "https://github.com/FairwindsOps/polaris/releases/download/${ver}/polaris_${ver}_linux_amd64.tar.gz" -o /tmp/polaris.tar.gz
+curl -sL "https://github.com/FairwindsOps/polaris/releases/download/4.2.0/polaris_linux_amd64.tar.gz" -o /tmp/polaris.tar.gz
 
 cd /tmp
 mkdir -p  "$HOME/.local/bin"

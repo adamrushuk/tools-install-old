@@ -5,9 +5,9 @@ source "$DIR/.lib.sh"
 
 # https://github.com/hashicorp/terraform/releases
 # ver="0.12.31"
-ver="0.13.7"
+# ver="0.13.7"
 # ver="0.14.11"
-# ver="1.0.4"
+ver="1.1.0"
 
 start "Terraform $ver"
 
