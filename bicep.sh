@@ -4,7 +4,7 @@ DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
 # https://github.com/Azure/bicep/releases/
-VERSION="v0.4.1124"
+VERSION="v0.4.1272"
 start "bicep $VERSION"
 
 mkdir -p  "$HOME/.local/bin"
