@@ -28,6 +28,7 @@ sudo dpkg -i $GCM_DOWNLOAD_PATH
 
 # configure gcm core
 git-credential-manager-core configure
+git config --global credential.credentialStore secretservice
 
 # cleanup
 rm -f $GCM_DOWNLOAD_PATH
