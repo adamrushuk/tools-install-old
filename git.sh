@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
@@ -15,7 +15,7 @@ start "Git Credential Manager $GCM_VERSION"
 
 # https://git-scm.com/download/linux
 echo "Adding PPA for latest stable git version:"
-sudo add-apt-repository ppa:git-core/ppa
+sudo add-apt-repository ppa:git-core/ppa --yes
 sudo apt-get install git=$GIT_VERSION
 
 # https://github.com/GitCredentialManager/git-credential-manager#ubuntudebian-distributions
@@ -34,8 +34,7 @@ git config --global credential.credentialStore secretservice
 rm -f $GCM_DOWNLOAD_PATH
 
 # info
-echo "git exec path:"
+echo "Git exec path and version info:"
 git --exec-path
-
-end 'git' '--version'
-end 'git-credential-manager-core' '--version'
+git --version
+git-credential-manager-core --version
