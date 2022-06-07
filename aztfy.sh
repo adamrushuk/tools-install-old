@@ -7,7 +7,7 @@ DIR=$(cd "$(dirname "$0")" && pwd)
 source "$DIR/.lib.sh"
 
 # https://github.com/Azure/aztfy/releases
-ver="0.4.0"
+ver="0.5.0"
 
 start "Terrafy $ver"
 
@@ -19,4 +19,4 @@ mkdir -p  "$HOME/.local/bin"
 mv aztfy "$HOME/.local/bin"
 rm aztfy.zip
 
-end 'aztfy' '-v'
+end 'aztfy' '--version'
